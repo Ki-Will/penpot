@@ -4,9 +4,9 @@
   "version": "1.0.0",
   "type": "module",
   "scripts": {
-    "start": "vite build --watch --config vite.config.ts",
-    "start:multi-user": "pnpm run start",
-    "build": "tsc && vite build --config vite.release.config.ts",
+    "start": "node init && vite build --watch --config vite.config.ts",
+    "start:multi-user": "node init && pnpm run start",
+    "build": "node init && tsc && vite build --config vite.release.config.ts",
     "types:check": "tsc --noEmit",
     "clean": "rm -rf dist/"
   },

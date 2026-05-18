@@ -2,6 +2,9 @@ import path from "node:path";
 import fs from "node:fs/promises";
 import { defineConfig } from "vite";
 import { coverageConfigDefaults } from "vitest/config";
+import { createRequire } from 'module';
+
+const require = createRequire(import.meta.url);
 
 async function waitFor(timeInMillis) {
   return new Promise((resolve) => setTimeout((_) => resolve(), timeInMillis));
