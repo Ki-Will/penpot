@@ -85,7 +85,8 @@
 /**/node_modules
 /**/.yarn/*
 /.pnpm-store
-/.vscode
 /.idea
 /.claude
 /.playwright-mcp
+config.bat
+node_modules
